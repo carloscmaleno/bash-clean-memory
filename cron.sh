@@ -56,6 +56,6 @@ zenity --info \
      - Free: $mem_free MB
      - Cache: $cached_before MB 
      - Liberate: $cached_liberate MB
-     - Swap: $swapmem MB"
+     - Swap: $swapmem MB" \
     --timeout="3"
     

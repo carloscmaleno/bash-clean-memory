@@ -44,18 +44,18 @@ cached_liberate=$(( $(( $cached_before - $cached_after)) / 1024))
 
 # Liberate Swap memory
 if [ "$swapmem" -gt 0 ] && [ "$swapmem" -lt "$mem_free" ]; then
-  swapoff -a 
-  swapon -a
+  /sbin/swapoff -a
+  /sbin/swapon -a
 fi
 
 
 ## Show output
-zenity --info \
+/usr/bin/zenity --info \
     --text="Memory has been clear \n
      - Memory: $mem MB
      - Free: $mem_free MB
      - Cache: $cached_before MB 
      - Liberate: $cached_liberate MB
      - Swap: $swapmem MB" \
-    --timeout="3"
+    --timeout=3
     

@@ -10,7 +10,7 @@ export XAUTHORITY=/home/your_user_name/.Xauthority
 ###############################################################
 
 ## Make S.O. ready to operations
-sync
+/bin/sync
 
 # Calculate RAM
 mem=`cat /proc/meminfo | grep "MemTotal" | tr -s ' ' | cut -d ' ' -f2`
@@ -54,8 +54,7 @@ fi
     --text="Memory has been clear \n
      - Memory: $mem MB
      - Free: $mem_free MB
-     - Cache: $cached_before MB 
+     - Cache: $cached_before MB
      - Liberate: $cached_liberate MB
      - Swap: $swapmem MB" \
     --timeout=3
-    

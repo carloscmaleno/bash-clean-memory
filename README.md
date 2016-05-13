@@ -13,7 +13,7 @@ You can add this file at your Cron task like (This example execute it each hour)
 ```sh
 $ crontab -e
 
-$ * */1 * * * /bin/sh /home/carlos/Escritorio/memory
+$ 0 * * * * /bin/sh /home/carlos/Escritorio/memory
 ```
 
 
